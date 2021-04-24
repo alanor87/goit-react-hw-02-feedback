@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class Section extends React.Component {
   render() {
@@ -12,4 +13,7 @@ class Section extends React.Component {
   }
 }
 
+Section.propTypes = {
+  title: PropTypes.string
+}
 export default Section;

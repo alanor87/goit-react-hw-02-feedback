@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import styles from "./FeedbackOptions.module.css"
 
 class FeedbackOptions extends React.Component {
@@ -14,6 +15,11 @@ class FeedbackOptions extends React.Component {
       </div>
     );
   }
+}
+
+FeedbackOptions.propTypes = {
+  onLeaveFeedback: PropTypes.func,
+  options: PropTypes.arrayOf(PropTypes.string)
 }
 
 export default FeedbackOptions;
